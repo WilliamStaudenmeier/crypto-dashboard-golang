@@ -1,22 +1,22 @@
-# Crypto Dashboard Rust
+# Crypto Dashboard Golang
 
-A lightweight cryptocurrency market dashboard built with Rust.
+A lightweight cryptocurrency market dashboard built with Golang.
 
 ## Overview
 
-- Rust HTTP server using Axum
-- JSON handling with serde_json
+- Go HTTP server using net/http
+- JSON handling with encoding/json
 - Server-side CoinGecko API integration
-- Lightweight static dashboard UI served by the Rust app
+- Lightweight static dashboard UI served by the Go app
 - Render free-tier deployment via Docker
 
 ## Project Structure
 
-- src/main.rs: Rust server and API proxy routes
+- main.go: Go server and API proxy routes
 - static/index.html: Dashboard layout
 - static/styles.css: Styling
 - static/app.js: Client-side rendering logic
-- Cargo.toml: Rust dependencies and package config
+- go.mod: Go module config
 - Dockerfile: Containerized deploy/runtime
 - render.yaml: Render Blueprint
 
@@ -40,7 +40,7 @@ Optional variables:
 ### 2. Build and run
 
 ```bash
-cargo run
+go run main.go
 ```
 
 Open http://localhost:8080
@@ -53,3 +53,7 @@ Open http://localhost:8080
 - GET /api/trending
 - GET /api/markets?vs_currency=usd&per_page=20&page=1
 - GET /api/history?coin_id=bitcoin&days=365&vs_currency=usd
+
+## Repository
+
+- https://github.com/WilliamStaudenmeier/crypto-dashboard-golang

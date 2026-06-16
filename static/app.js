@@ -7,7 +7,7 @@ const formatMoney = (value) =>
 
 const formatPercent = (value) => `${(value || 0).toFixed(2)}%`;
 const EXPLICIT_API_BASE = (window.__API_BASE_URL__ || "").replace(/\/$/, "");
-const DEFAULT_RENDER_API_BASE = "https://crypto-dashboard-cpp.onrender.com";
+const DEFAULT_RENDER_API_BASE = "https://crypto-dashboard-golang.onrender.com";
 const API_BASE_URL =
   EXPLICIT_API_BASE ||
   (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" ? "" : DEFAULT_RENDER_API_BASE);

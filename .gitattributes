@@ -1,5 +1,5 @@
-# Keep language stats focused on Rust backend code.
-index.html linguist-vendored
+# Keep language stats focused on Go backend code.
+index.html linguist-detectable=false
 styles.css linguist-vendored
 app.js linguist-vendored
 api/** linguist-vendored

@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: crypto-dashboard-rust
+    name: crypto-dashboard-golang
     env: docker
     plan: free
     autoDeploy: true
