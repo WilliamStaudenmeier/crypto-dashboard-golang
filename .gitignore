@@ -1,0 +1,12 @@
+# Rust build output
+/target/
+
+# Environment files
+.env
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+.vercel
